@@ -34,13 +34,18 @@ public class DragDropScripts : MonoBehaviour , IPointerDownHandler, IBeginDragHa
 	public void OnDrag(PointerEventData notikums){
 		Debug.Log ("Notiek viksana!");
 		//Maina objekta x,y koordinates
-		velkObjRectTransf.anchoredPosition+=notikums.delta / objektuSkripts.kanva.scaleFactor;
-		//Velkot objektu tas paliek caurspidigs
-		kanvasGrupa.alpha = 0.6f;
-		//Lai objektam velkot iet cauri raycast stari
-		kanvasGrupa.blocksRaycasts = false;
+		velkObjRectTransf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
 	}
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Beigta objektu vilksana");
+		kanvasGrupa.alpha = 1f;
+		if (objektuSkripts.vaiIstajaVieta == false) {
+			kanvasGrupa.blocksRaycasts = true;
+		} else {
+			//Aizmirst pedejo objektu,kas vilkts
+			objektuSkripts.pedejaisVilktais = null;
+		}
+		//Ja viens objekts nolikts istaja vieta, tad lai varetu turpinat vilkt parejos iestata false
+		objektuSkripts.vaiIstajaVieta = false;
 }
 }
