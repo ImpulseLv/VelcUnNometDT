@@ -9,6 +9,14 @@ public class Objekti : MonoBehaviour {
 	public GameObject atkritumuMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
+	public GameObject cementaMasina;
+	public GameObject b2;
+	public GameObject e46;
+	public GameObject Eskavators;
+	public GameObject policijasAuto;
+	public GameObject Traktors1;
+	public GameObject Traktors2;
+	public GameObject ugunsDzesejMasina;
 
 	//Uzglaba velkamo objektu sakotnekas atasanas vietas koordinates
 	[HideInInspector]
@@ -17,6 +25,20 @@ public class Objekti : MonoBehaviour {
 	public Vector2 atroKoord;
 	[HideInInspector]
 	public Vector2 bussKoord;
+	[HideInInspector]
+	public Vector2 cementKoord;
+	[HideInInspector]
+	public Vector2 traktors1Koord;
+	[HideInInspector]
+	public Vector2 traktors2Koord;
+	[HideInInspector]
+	public Vector2 policijasAutoKoord;
+	[HideInInspector]
+	public Vector2 eskavatorsKoord;
+	[HideInInspector]
+	public Vector2 e46Koord;
+	[HideInInspector]
+	public Vector2 b2Koord;
 
 	//Uzglaba audio avotu, kura atskanot attelu skanas efektus
 	public AudioSource skanasAvots;
@@ -33,6 +55,7 @@ public class Objekti : MonoBehaviour {
 		atkrKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
 		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
+		cementKoord = cementaMasina.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
