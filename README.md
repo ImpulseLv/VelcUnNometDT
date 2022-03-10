@@ -4,8 +4,8 @@ Unity 2D spele, kas nodrosina objekta viksanu,noliksanu
 ### Veicamo darbu saraksts
 - [x] Speles ainas iekartosana
 - [x] Objektu viksanas nodrosinasana
-- [ ] Objektu novietosanas (pareizi/nepareizi) nodrosinasana
+- [x] Objektu novietosanas (pareizi/nepareizi) nodrosinasana
 - [ ] Laika atskaites integresana
 - [ ] Punktu sistemas ievesana
-- [ ] Objektu izmera mainas iespeju integresana
-- [ ] Objektu rotacijas iespeju integresana
+- [x] Objektu izmera mainas iespeju integresana
+- [x] Objektu rotacijas iespeju integresana

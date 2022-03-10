@@ -26,6 +26,7 @@ public class DragDropScripts : MonoBehaviour , IPointerDownHandler, IBeginDragHa
 	}
 	public void OnBeginDrag(PointerEventData notikums){
 		Debug.Log ("Uzsakta vilksana!");
+
 		//Velkot objektu tas paliek caurspidigs
 		kanvasGrupa.alpha = 0.6f;
 		//Lai objektam velkot iet cauri raycast stari
@@ -33,6 +34,8 @@ public class DragDropScripts : MonoBehaviour , IPointerDownHandler, IBeginDragHa
 	}
 	public void OnDrag(PointerEventData notikums){
 		Debug.Log ("Notiek viksana!");
+		//Nometot objektu atceras to ka pedejo vilkto
+		objektuSkripts.pedejaisVilktais = notikums.pointerDrag;
 		//Maina objekta x,y koordinates
 		velkObjRectTransf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
 	}
