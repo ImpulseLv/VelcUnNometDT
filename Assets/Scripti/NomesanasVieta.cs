@@ -48,6 +48,30 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 					case "Skola":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [3]);
 						break;
+					case "Traktors2":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [7]);
+						break;
+					case "Traktors1":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [6]);
+						break;
+					case "Cements":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [3]);
+						break;
+					case "B2":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [8]);
+						break;
+					case "e46":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [8]);
+						break;
+					case "Eskavators":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [9]);
+						break;
+					case "Policija":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [8]);
+						break;
+					case "UgunsDzesejs":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanasKoAtskanot [9]);
+						break;
 					default:
 						Debug.Log ("nederigs tags!");
 						break;
@@ -67,6 +91,30 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 					break;
 				case "Skola":
 					objektuSkripts.autobuss.GetComponent<RectTransform> ().localPosition = objektuSkripts.bussKoord;
+					break;
+				case "Traktors2":
+					objektuSkripts.Traktors2.GetComponent<RectTransform> ().localPosition = objektuSkripts.traktors2Koord;
+					break;
+				case "Traktors1":
+					objektuSkripts.Traktors1.GetComponent<RectTransform> ().localPosition = objektuSkripts.traktors1Koord;
+					break;
+				case "Cements":
+					objektuSkripts.cementaMasina.GetComponent<RectTransform> ().localPosition = objektuSkripts.cementKoord;
+					break;
+				case "B2":
+					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition = objektuSkripts.b2Koord;
+					break;
+				case "e46":
+					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition = objektuSkripts.e46Koord;
+					break;
+				case "Eskavators":
+					objektuSkripts.Eskavators.GetComponent<RectTransform> ().localPosition = objektuSkripts.eskavatorsKoord;
+					break;
+				case "Policija":
+					objektuSkripts.policijasAuto.GetComponent<RectTransform> ().localPosition = objektuSkripts.policijasAutoKoord;
+					break;
+				case "UgunsDzesejs":
+					objektuSkripts.ugunsDzesejMasina.GetComponent<RectTransform> ().localPosition = objektuSkripts.dzesejaKoord;
 					break;
 				default:
 					Debug.Log ("nederigs tags!");

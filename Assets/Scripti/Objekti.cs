@@ -39,6 +39,8 @@ public class Objekti : MonoBehaviour {
 	public Vector2 e46Koord;
 	[HideInInspector]
 	public Vector2 b2Koord;
+	[HideInInspector]
+	public Vector2 dzesejaKoord;
 
 	//Uzglaba audio avotu, kura atskanot attelu skanas efektus
 	public AudioSource skanasAvots;
