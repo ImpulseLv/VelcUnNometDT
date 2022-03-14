@@ -58,6 +58,13 @@ public class Objekti : MonoBehaviour {
 		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
 		cementKoord = cementaMasina.GetComponent<RectTransform> ().localPosition;
+		b2Koord = b2.GetComponent<RectTransform> ().localPosition;
+		e46Koord = e46.GetComponent<RectTransform> ().localPosition;
+		dzesejaKoord = ugunsDzesejMasina.GetComponent<RectTransform> ().localPosition;
+		traktors1Koord = Traktors1.GetComponent<RectTransform> ().localPosition;
+		traktors2Koord = Traktors2.GetComponent<RectTransform> ().localPosition;
+		eskavatorsKoord = Eskavators.GetComponent<RectTransform> ().localPosition;
+		policijasAutoKoord = policijasAuto.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
