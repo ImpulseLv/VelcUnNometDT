@@ -9,3 +9,4 @@ Unity 2D spele, kas nodrosina objekta viksanu,noliksanu
 - [ ] Punktu sistemas ievesana
 - [x] Objektu izmera mainas iespeju integresana
 - [x] Objektu rotacijas iespeju integresana
+- [x] Ieviesta 2 aina un izvelne
